@@ -71,5 +71,16 @@
             <span>🩺 Last Medical History:</span> non
         </div>
     </div>
+     <audio id="profile-audio" src="21.mp3"></audio>
+    <script>
+        // Get the image and audio elements
+        const profilePicture = document.getElementById('profile-picture');
+        const profileAudio = document.getElementById('profile-audio');
+
+        // Add click event listener to the image
+        profilePicture.addEventListener('click', () => {
+            profileAudio.play();
+        });
+    </script>
 </body>
 </html>
